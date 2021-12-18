@@ -8,7 +8,7 @@ export default function Header() {
     );
 }
 
-const Topo = styled.h1`
+const Topo = styled.div`
     background-color: #C3CFD9;
 
     position: absolute;
