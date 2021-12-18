@@ -1,6 +1,7 @@
 import axios from "axios";
 import { React, useEffect, useState } from "react"; 
 import styled from "styled-components";
+import Poster from "./Poster";
 
 export default function ChooseMovie(props) {
 
@@ -17,8 +18,9 @@ export default function ChooseMovie(props) {
         <>
         <Title>Selecione o filme</Title>
         <Movies>
-            {posterURL.map(poster => <li>
-                <img src={poster.posterURL} alt={poster.title}/>
+            {posterURL.map(poster => 
+            <li>
+                <Poster {...poster}/>
             </li>)}
         </Movies>
         </>
