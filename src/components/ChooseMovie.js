@@ -24,9 +24,8 @@ export default function ChooseMovie() {
         <Title>Selecione o filme</Title>
         <Movies>
             {posterURL.map(poster => 
-            <li>
                 <Poster {...poster}/>
-            </li>)}
+            )}
         </Movies>
         </>
     );

@@ -24,7 +24,7 @@ export default function Seates() {
 
         <Seats>
             {seats.seats.map(seat => 
-                <div>{seat.name}</div>
+                <Seat state={seat.isAvailable}>{seat.name}</Seat>
             )}
         </Seats>
 
@@ -50,29 +50,6 @@ export default function Seates() {
     );
 }
 
-const Bnt = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-    div{
-        width: 225px;
-        height: 42px;
-        background-color: #E8833A;
-
-        font-size: 18px;
-        color: #FFFFFF;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    a{
-        text-decoration: none;
-    }
-`;
-
 const Title = styled.h1`
     font-size: 24px;
     line-height: 28px;
@@ -88,16 +65,16 @@ const Seats = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+`;
 
-    div{
+const Seat = styled.div`
         width: 26px;
         height: 26px;
         margin-bottom: 18px;
 
-        background-color: #C3CFD9;
+        background-color: ${(props) =>  props.state ? "#C3CFD9" : "#FBE192" };
         border-radius: 50%;
-        border: solid 1px #808F9D;
-        
+        border: solid 1px ${(props) =>  props.state ? "#7B8B99" : "#F7C52B" };
         display: flex;
         align-items: center;
         justify-content: center;
@@ -105,7 +82,6 @@ const Seats = styled.div`
         color: #000000;
         font-size: 11px;
         line-height: 12.89px;
-    }
 `;
 
 const Subtitle = styled.div`
@@ -180,5 +156,28 @@ const PersonalData = styled.div`
             line-height: 21.09px;
             font-style: italic;
         }
+    }
+`;
+
+const Bnt = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    div{
+        width: 225px;
+        height: 42px;
+        background-color: #E8833A;
+
+        font-size: 18px;
+        color: #FFFFFF;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a{
+        text-decoration: none;
     }
 `;
