@@ -1,9 +1,10 @@
 import axios from "axios";
 import { React, useEffect, useState } from "react"; 
 import styled from "styled-components";
+
 import Poster from "./Poster";
 
-export default function ChooseMovie(props) {
+export default function ChooseMovie() {
 
     const [posterURL, setPosterURL] = useState([]);
 
@@ -13,6 +14,10 @@ export default function ChooseMovie(props) {
             setPosterURL(response.data);
         })
     },[]);
+
+    if(posterURL.length === 0){
+        return("Carregando...");
+    }
 
     return(
         <>

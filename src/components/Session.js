@@ -1,3 +1,5 @@
+import { React } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export default function Session({ weekday, date, showtimes }) {
@@ -7,7 +9,9 @@ export default function Session({ weekday, date, showtimes }) {
 
             <ul>
             {showtimes.map(hour =>
-                <li>{hour.name}</li>
+                <Link to={`/assentos/${hour.id}`}>
+                    <li>{hour.name}</li>
+                </Link>
             )}
             </ul>
         </Sessions>
@@ -26,6 +30,10 @@ const Sessions = styled.div`
 
     ul{
         display: flex;
+    }
+
+    a{
+        text-decoration: none;
     }
 
     li{

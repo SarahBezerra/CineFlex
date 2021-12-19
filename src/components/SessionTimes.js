@@ -1,26 +1,32 @@
 import axios from "axios";
-import { React, useEffect, useState } from "react";
+import { React, useEffect, useState } from "react"; 
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
+
 import Session from "./Session";
 
 export default function SessionTimes() {
 
-    const [session, setSession] = useState([]);
     const { idFilme } = useParams();
+    const [session, setSession] = useState([]);
 
     useEffect(() => {
         const promisse = axios.get(`https://mock-api.driven.com.br/api/v4/cineflex/movies/${idFilme}/showtimes`);
-        promisse.then(response => setSession(response.data));
+        promisse.then(response => {
+            setSession(response.data)});
     }
-    ,[idFilme]);
+    ,[]);
+
+    if(session.length === 0){
+        return("Carregando...");
+    }
 
     return(
         <>
         <Title>Selecione o horário</Title>
 
         {session.days.map(infos => 
-            <Session {...infos}/>
+            <Session {...infos} />
         )}
         </>
     );
