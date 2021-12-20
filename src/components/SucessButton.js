@@ -31,6 +31,7 @@ const Bnt = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 
     div{
         width: 225px;

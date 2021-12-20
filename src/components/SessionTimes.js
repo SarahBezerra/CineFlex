@@ -59,7 +59,7 @@ const Footer = styled.div`
     align-items: center;
 
     color: #293845;
-    font-size: 26px;
+    font-size: 20px;
 
     div{
         margin-right: 15px;
