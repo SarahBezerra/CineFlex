@@ -1,8 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+import axios from "axios";
 
 export default function Sucess(props) {
     console.log(props.dataSucess);
+
+    const ids = [];
+    props.dataSucess.seats.map(info =>
+        ids.push(info.id)
+    );
+    console.log(ids);
+
+    const promisse = axios.post("https://mock-api.driven.com.br/api/v4/cineflex/seats/book-many", 
+    {ids: ids, name: props.dataSucess.name, cpf: props.dataSucess.cpf});
+        promisse.then(response => {
+            console.log("dados enviados com sucesso");
+    })
+
     return(
         <>
         <Title>
@@ -14,7 +28,7 @@ export default function Sucess(props) {
         <p></p>
 
         <h2>Ingressos</h2>
-        {props.dataSucess.ids.map(info =>
+        {props.dataSucess.seats.map(info =>
             <p>{`Assento: ${info.name}`}</p>
         )}
 
