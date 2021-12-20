@@ -3,17 +3,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export default function SucessButton(props) {
-
-    console.log(props.selections)
-    console.log(props.inputName)
-    console.log(props.inputCPF)
-
     function VerifySeats(seat){
         return seat.isSelected === true;
     }
 
     const selected_seats = props.selections.filter(VerifySeats);
-    console.log(selected_seats)
 
     if(selected_seats.length !== 0 && props.inputName.length !== 0 && props.inputCPF.length !== 0){
         const infos = {seats: selected_seats, name: props.inputName, cpf: props.inputCPF}; 
