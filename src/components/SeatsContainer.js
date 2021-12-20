@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import SeatsList from "./SeatsList";
 import Inputs from "./Inputs";
+import SucessButton from "./SucessButton";
 
 export default function SeatsContainer(props) {
 
@@ -25,11 +26,7 @@ export default function SeatsContainer(props) {
 
     <Inputs inputName={inputName} setInputName={setInputName} inputCPF={inputCPF} setInputCPF={setInputCPF} />
 
-    <Bnt>
-        <Link to={"/sucesso"}>
-            <div>Reservar assento(s)</div>
-        </Link>
-    </Bnt>
+    <SucessButton selections={selections} inputName={inputName} inputCPF={inputCPF} dataSucess={props.dataSucess} setDataSucess={props.setDataSucess} />
     </>
     );
 }
@@ -82,28 +79,5 @@ const Subtitle = styled.div`
         border: solid 1px #F7C52B;
         border-radius: 50%;
         margin-bottom: 5px;
-    }
-`;
-
-const Bnt = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-    div{
-        width: 225px;
-        height: 42px;
-        background-color: #E8833A;
-
-        font-size: 18px;
-        color: #FFFFFF;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    a{
-        text-decoration: none;
     }
 `;

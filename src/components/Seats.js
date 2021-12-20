@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 import SeatsContainer from "./SeatsContainer";
 
-export default function Seates() {
+export default function Seates(props) {
 
     const { idSessao } = useParams();
     const [ seats, setSeats ] = useState([]);
@@ -23,7 +23,7 @@ export default function Seates() {
     return(
         <>
         <Title>Selecione o(s) assento(s)</Title>
-        <SeatsContainer seats={seats.seats}/>
+        <SeatsContainer seats={seats.seats} dataSucess={props.dataSucess} setDataSucess={props.setDataSucess}/>
         </>
     );
 }
