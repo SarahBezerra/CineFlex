@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import { React, useEffect, useState } from "react";
 import styled from "styled-components";
 
+import SeatsList from "./SeatsList";
+
 export default function Seates() {
 
     const { idSessao } = useParams();
@@ -21,11 +23,9 @@ export default function Seates() {
     return(
         <>
         <Title>Selecione o(s) assento(s)</Title>
-
+        
         <Seats>
-            {seats.seats.map(seat => 
-                <Seat state={seat.isAvailable}>{seat.name}</Seat>
-            )}
+            <SeatsList seats={seats.seats}/>
         </Seats>
 
         <Subtitle>
@@ -42,9 +42,9 @@ export default function Seates() {
         </PersonalData>
 
         <Bnt>
-        <Link to={"/sucesso"}>
-            <div>Reservar assento(s)</div>
-        </Link>
+            <Link to={"/sucesso"}>
+                <div>Reservar assento(s)</div>
+            </Link>
         </Bnt>
         </>
     );
@@ -65,23 +65,6 @@ const Seats = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-`;
-
-const Seat = styled.div`
-        width: 26px;
-        height: 26px;
-        margin-bottom: 18px;
-
-        background-color: ${(props) =>  props.state ? "#C3CFD9" : "#FBE192" };
-        border-radius: 50%;
-        border: solid 1px ${(props) =>  props.state ? "#7B8B99" : "#F7C52B" };
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        color: #000000;
-        font-size: 11px;
-        line-height: 12.89px;
 `;
 
 const Subtitle = styled.div`
