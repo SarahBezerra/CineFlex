@@ -24,8 +24,8 @@ export default function Sucess(props) {
 
         <MovieInfo>
             <h2>Filme e sessão</h2>
-            <p></p>
-            <p></p>
+            <p>{props.dataSucess.movieInfos.movie.title}</p>
+            <p>{`${props.dataSucess.movieInfos.day.date} - ${props.dataSucess.movieInfos.name}`}</p>
 
             <h2>Ingressos</h2>
             {props.dataSucess.seats.map(info =>

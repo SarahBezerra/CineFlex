@@ -24,7 +24,7 @@ export default function Seates(props) {
         <>
         <Title>Selecione o(s) assento(s)</Title>
 
-        <SeatsContainer seats={seats.seats} dataSucess={props.dataSucess} setDataSucess={props.setDataSucess}/>
+        <SeatsContainer seats={seats} dataSucess={props.dataSucess} setDataSucess={props.setDataSucess}/>
         
         <Footer>
             <div>

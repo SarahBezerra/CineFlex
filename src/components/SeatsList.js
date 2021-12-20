@@ -18,7 +18,7 @@ function Select(seat, selections, setSelections) {
 
 
 export default function SeatsList(props) {
-    if(props.setSelections.length === 0){
+    if(props.selections.length === 0){
         return("Carregando...");
     }
     

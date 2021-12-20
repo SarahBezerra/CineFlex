@@ -10,7 +10,7 @@ export default function SucessButton(props) {
     const selected_seats = props.selections.filter(VerifySeats);
 
     if(selected_seats.length !== 0 && props.inputName.length !== 0 && props.inputCPF.length !== 0){
-        const infos = {seats: selected_seats, name: props.inputName, cpf: props.inputCPF}; 
+        const infos = {seats: selected_seats, name: props.inputName, cpf: props.inputCPF, movieInfos: props.seats}; 
         return(
             <Bnt>
                 <Link to={"/sucesso"}>

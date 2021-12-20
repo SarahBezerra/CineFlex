@@ -8,14 +8,14 @@ import SucessButton from "./SucessButton";
 
 export default function SeatsContainer(props) {
 
-    const [ selections, setSelections ] = useState(props.seats);
+    const [ selections, setSelections ] = useState(props.seats.seats);
     const [ inputName, setInputName ] = useState("");
     const [ inputCPF, setInputCPF ] = useState("");
 
     return(
     <>
     <Seats>
-        <SeatsList seats={props.seats} selections={selections} setSelections={setSelections} />
+        <SeatsList seats={props.seats.seats} selections={selections} setSelections={setSelections} />
     </Seats>
 
     <Subtitle>
@@ -26,7 +26,7 @@ export default function SeatsContainer(props) {
 
     <Inputs inputName={inputName} setInputName={setInputName} inputCPF={inputCPF} setInputCPF={setInputCPF} />
 
-    <SucessButton selections={selections} inputName={inputName} inputCPF={inputCPF} dataSucess={props.dataSucess} setDataSucess={props.setDataSucess} />
+    <SucessButton selections={selections} inputName={inputName} inputCPF={inputCPF} dataSucess={props.dataSucess} setDataSucess={props.setDataSucess} seats={props.seats} />
     </>
     );
 }
