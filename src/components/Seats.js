@@ -4,11 +4,14 @@ import { React, useEffect, useState } from "react";
 import styled from "styled-components";
 
 import SeatsList from "./SeatsList";
+import Inputs from "./Inputs";
 
 export default function Seates() {
 
     const { idSessao } = useParams();
     const [ seats, setSeats ] = useState([]);
+    const [ inputName, setInputName ] = useState("");
+    const [ inputCPF, setInputCPF ] = useState("");
 
     useEffect(() => {
         const promisse = axios.get(`https://mock-api.driven.com.br/api/v4/cineflex/showtimes/${idSessao}/seats`);
@@ -34,12 +37,7 @@ export default function Seates() {
             <div><div className="unavailable"/>Indisponível</div>
         </Subtitle>
 
-        <PersonalData>
-            <div className="title">Nome do comprador:</div>
-            <input type="text" placeholder="Digite seu nome..."></input>
-            <div className="title">CPF do comprador:</div>
-            <input type="text" placeholder="Digite seu CPF..."></input>
-        </PersonalData>
+        <Inputs inputName={inputName} setInputName={setInputName} inputCPF={inputCPF} setInputCPF={setInputCPF} />
 
         <Bnt>
             <Link to={"/sucesso"}>
@@ -109,36 +107,6 @@ const Subtitle = styled.div`
         border: solid 1px #F7C52B;
         border-radius: 50%;
         margin-bottom: 5px;
-    }
-`;
-
-const PersonalData = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    margin: 45px 0;
-
-    .title{
-        font-size: 18px;
-        color: #293845;
-
-        margin-bottom: 5px;
-    }
-
-    input{
-        width: 327px;
-        height: 51px;
-        border-radius: 3px;
-        background-color: #FFFFFF;
-        margin-bottom: 10px;
-        border: solid 1px #D4D4D4;
-        padding: 0 18px;
-
-        ::placeholder{
-            font-size: 18px;
-            color: #AFAFAF;
-            line-height: 21.09px;
-            font-style: italic;
-        }
     }
 `;
 
