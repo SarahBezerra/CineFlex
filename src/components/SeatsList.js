@@ -18,17 +18,16 @@ function Select(seat, selections, setSelections) {
 
 
 export default function SeatsList(props) {
-    const [ selections, setSelections ] = useState(props.seats);
-    console.log(selections)
+    console.log(props.selections)
 
-    if(setSelections.length === 0){
+    if(props.setSelections.length === 0){
         return("Carregando...");
     }
     
     return(
         props.seats.map(seat =>
             <Seat isAvailable={seat.isAvailable} isSelected={seat.isSelected}>
-                <div onClick={() => Select(seat, selections, setSelections)}>
+                <div onClick={() => Select(seat, props.selections, props.setSelections)}>
                     {seat.name}
                 </div>
             </Seat>
