@@ -36,7 +36,7 @@ export default function SeatsList(props) {
 const Seat = styled.div`
         width: 26px;
         height: 26px;
-        margin-bottom: 18px;
+        margin: 0 2px 18px;
 
         background-color: ${(props) =>  (props.isAvailable) ? (props.isSelected) ? "#8DD7CF" : "#C3CFD9" : "#FBE192" };
         border-radius: 50%;

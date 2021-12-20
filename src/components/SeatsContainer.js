@@ -32,9 +32,12 @@ export default function SeatsContainer(props) {
 }
 
 const Seats = styled.div`
+    width: 325px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    margin-bottom: 10px;
 `;
 
 const Subtitle = styled.div`
