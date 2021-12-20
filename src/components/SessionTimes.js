@@ -28,6 +28,13 @@ export default function SessionTimes() {
         {session.days.map(infos => 
             <Session {...infos} />
         )}
+
+        <Footer>
+            <div>
+                <img src={session.posterURL} alt={session.title}/>
+            </div>
+            <p>{session.title}</p>
+        </Footer>
         </>
     );
 }
@@ -41,4 +48,37 @@ const Title = styled.h1`
 
     margin: 40px 0 30px 0;
     width: 100%;
+`;
+
+const Footer = styled.div`
+    height: 117px;
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+
+    color: #293845;
+    font-size: 26px;
+
+    div{
+        margin-right: 15px;
+        box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            height: 89px;
+            width: 64px;
+
+            border: solid 10px #ffffff;
+
+        }
+    }
+
+    p{
+        flex-wrap: wrap;
+    }
 `;
