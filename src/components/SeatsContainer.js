@@ -1,6 +1,5 @@
 import {React, useState} from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 import SeatsList from "./SeatsList";
 import Inputs from "./Inputs";

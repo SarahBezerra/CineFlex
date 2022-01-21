@@ -9,7 +9,7 @@ export default function Session({ weekday, date, showtimes }) {
 
             <ul>
             {showtimes.map(hour =>
-                <Link to={`/assentos/${hour.id}`}>
+                <Link key={hour.id} to={`/assentos/${hour.id}`}>
                     <li>{hour.name}</li>
                 </Link>
             )}

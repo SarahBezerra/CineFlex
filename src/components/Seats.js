@@ -14,7 +14,7 @@ export default function Seates(props) {
         const promisse = axios.get(`https://mock-api.driven.com.br/api/v4/cineflex/showtimes/${idSessao}/seats`);
         promisse.then(response => setSeats(response.data));
     }
-    ,[]);
+    ,[idSessao]);
 
     if(seats.length === 0){
         return("Carregando...");

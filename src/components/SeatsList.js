@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import styled from "styled-components";
 
 
@@ -24,7 +24,7 @@ export default function SeatsList(props) {
     
     return(
         props.seats.map(seat =>
-            <Seat isAvailable={seat.isAvailable} isSelected={seat.isSelected}>
+            <Seat key={seat.name} isAvailable={seat.isAvailable} isSelected={seat.isSelected}>
                 <div onClick={() => Select(seat, props.selections, props.setSelections)}>
                     {seat.name}
                 </div>

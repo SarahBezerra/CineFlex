@@ -15,7 +15,7 @@ export default function SessionTimes() {
         promisse.then(response => {
             setSession(response.data)});
     }
-    ,[]);
+    ,[idFilme]);
 
     if(session.length === 0){
         return("Carregando...");
@@ -26,7 +26,7 @@ export default function SessionTimes() {
         <Title>Selecione o horário</Title>
 
         {session.days.map(infos => 
-            <Session {...infos} />
+            <Session key={infos.id} {...infos} />
         )}
 
         <Footer>
