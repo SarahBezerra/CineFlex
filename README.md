@@ -24,7 +24,7 @@ Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/sarah-bezerra-0a8124
 
 Além disso, você pode usar este projeto como quiser, seja para estudar, fazer melhorias ou ganhar dinheiro! :handshake:
 
-## Conhecimentos Aplicadas
+## Conhecimentos Aplicados
 - Consumo de dados de API
 - useState, useEffect
 - axios
