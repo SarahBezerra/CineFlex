@@ -1,11 +1,9 @@
 # CineFlex
-<img src="https://user-images.githubusercontent.com/48498099/150563031-33b13647-9b6e-41a9-8a68-8dbfb10a0264.png" alt="Imagem Tela de Filmes" width="203px" height="366px" />
-
-![Imagem Tela de Filmes](https://user-images.githubusercontent.com/48498099/150563031-33b13647-9b6e-41a9-8a68-8dbfb10a0264.png)
-![Imagem Tela de Horários](https://user-images.githubusercontent.com/48498099/150563068-33eede7c-44c3-4922-98de-23e5591ad883.png)
-![Imagem Tela de Assentos](https://user-images.githubusercontent.com/48498099/150563096-e50cc059-2046-40ba-b4f6-6d2d932965ea.png)
-![Imagem Tela de Assentos](https://user-images.githubusercontent.com/48498099/150563117-e236ccf5-abf3-4819-9304-e8f4a4848eb8.png)
-![Imagem Tela de Sucesso](https://user-images.githubusercontent.com/48498099/150563125-2640c24f-946c-403a-8fef-36d52f791177.png)
+<img src="https://user-images.githubusercontent.com/48498099/150563031-33b13647-9b6e-41a9-8a68-8dbfb10a0264.png" alt="Imagem: Tela de Filmes" width="203px" height="366px" />
+<img src="https://user-images.githubusercontent.com/48498099/150563068-33eede7c-44c3-4922-98de-23e5591ad883.png" alt="Imagem: Tela de Horários" width="203px" height="366px" />
+<img src="https://user-images.githubusercontent.com/48498099/150563096-e50cc059-2046-40ba-b4f6-6d2d932965ea.png" alt="Imagem: Tela de Assentos" width="203px" height="366px" />
+<img src="https://user-images.githubusercontent.com/48498099/150563117-e236ccf5-abf3-4819-9304-e8f4a4848eb8.png" alt="Imagem: Tela de Assentos" width="203px" height="366px" />
+<img src="https://user-images.githubusercontent.com/48498099/150563125-2640c24f-946c-403a-8fef-36d52f791177.png" alt="Imagem: Tela de Reserva Finalizada" width="203px" height="366px" />
 
 Se quiser ver o deploy do projeto, [clique aqui](https://cine-flex-ai4akov48-sarahbezerra.vercel.app/)
 
