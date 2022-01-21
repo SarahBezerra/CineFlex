@@ -1,10 +1,10 @@
 # CineFlex
 
-![Imagem Tela de Filmes](https://drive.google.com/file/d/1KCQZqupgm4cwlLgp_jaI_5_LyhCuq9yM/view)
-![Imagem Tela de Horários](https://drive.google.com/file/d/1C8BJgrZROBt4ElSDC1olQLV3PeehZF1R/view)
-![Imagem Tela de Assentos](https://drive.google.com/file/d/1J0AkJy7SE-g7mnU0YWFolvV3CCKDNTTw/view)
-![Imagem Tela de Assentos](https://drive.google.com/file/d/1bIHNmd0-07qbytcyGu3HFNy-Y4st2_U0/view)
-![Imagem Tela de Sucesso](https://drive.google.com/file/d/1_XMz-dIpFxDuTILkezopg4h678BZYlyc/view)
+![Imagem Tela de Filmes](https://user-images.githubusercontent.com/48498099/150563031-33b13647-9b6e-41a9-8a68-8dbfb10a0264.png)
+![Imagem Tela de Horários](https://user-images.githubusercontent.com/48498099/150563068-33eede7c-44c3-4922-98de-23e5591ad883.png)
+![Imagem Tela de Assentos](https://user-images.githubusercontent.com/48498099/150563096-e50cc059-2046-40ba-b4f6-6d2d932965ea.png)
+![Imagem Tela de Assentos](https://user-images.githubusercontent.com/48498099/150563117-e236ccf5-abf3-4819-9304-e8f4a4848eb8.png)
+![Imagem Tela de Sucesso](https://user-images.githubusercontent.com/48498099/150563125-2640c24f-946c-403a-8fef-36d52f791177.png)
 
 Se quiser ver o deploy do projeto, [clique aqui](https://cine-flex-ai4akov48-sarahbezerra.vercel.app/)
 
