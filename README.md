@@ -8,7 +8,7 @@
 <img src="https://user-images.githubusercontent.com/48498099/150563125-2640c24f-946c-403a-8fef-36d52f791177.png" alt="Imagem: Tela de Reserva Finalizada" width="203px" height="366px" />
 </p>
 
-Se quiser ver o deploy do projeto, [clique aqui](https://cine-flex-ai4akov48-sarahbezerra.vercel.app/)
+Para ver o deploy do projeto, [clique aqui](https://cine-flex-ai4akov48-sarahbezerra.vercel.app/)
 
 ## Sobre o Projeto
 
